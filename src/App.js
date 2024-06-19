@@ -1,6 +1,5 @@
 // App.js
 import React from 'react';
-import './assets/nokiaFont.css';
 import './App.css';
 import ImageComponent from './imgComp';  // Make sure the path is correct
 
