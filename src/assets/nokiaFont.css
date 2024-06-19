@@ -1,6 +1,6 @@
 @font-application {
     font-family: 'nokiafc22';
-    src: url('/Users/gabrielesquibel/Desktop/PORTY/2D-for-portfolio/src/assets/nokiafc22.ttf') format('truetype');
+    src: url('src/assets/nokiafc22.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
