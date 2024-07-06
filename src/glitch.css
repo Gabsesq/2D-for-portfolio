@@ -1,0 +1,60 @@
+/* Setup the basic styling for the glitch overlay */
+.App::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 110%; /* Ensure full vertical cover */
+    pointer-events: none; /* Allow interaction with elements below */
+    z-index: 9999; /* Stay on top of other content */
+    background-image: url('./assets/glitch.jpeg'); /* Updated path to your glitch image */
+    background-repeat: no-repeat;
+    background-size: cover; /* Cover the entire area to ensure full width and height */
+    opacity: 1%; /* Start fully transparent */
+    display: block; /* Initially hidden, shown during animation */
+    background-blend-mode: overlay;
+    background-color: rgba(0,128,0,0.5);
+  }
+  
+  @keyframes glitch-animation {
+    0% {
+      top: 0%; /* Start just below the view */
+      opacity: 0.1; /* Slightly visible at the start */
+    }
+    10% {
+      top: 1%; /* Start just below the view */
+      opacity: 0.1; /* Slightly visible at the start */
+    }
+    50% {
+      top: 0%; /* Move halfway through the view */
+      opacity: 0.1; /* More visible in the middle */
+    }
+    51% {
+      top: -5%; /* Start just below the view */
+      opacity: 0.1; /* Slightly visible at the start */
+    }
+    52% {
+      top: 2%; /* Move halfway through the view */
+      opacity: 0.1; /* More visible in the middle */
+    }
+    60% {
+      top: 0%; /* Start just below the view */
+      opacity: 0.1; /* Slightly visible at the start */
+    }
+    72% {
+      top: 3%; /* Start just below the view */
+      opacity: 0.1; /* Slightly visible at the start */
+    }
+    100% {
+      top: 0%; /* End just above the view */
+      opacity: 0; /* End fully transparent */
+    }
+  }
+  
+  .App.glitch-active::after {
+    animation: glitch-animation .3s forwards; /* Adjust duration as needed */
+  }
+
+
+  
