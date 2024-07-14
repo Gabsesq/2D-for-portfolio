@@ -4,14 +4,12 @@ import '../Contact.css'; // Assuming you have styles for the form
 
 function Contact() {
   console.log("Contact component is rendering");
-
   const [formData, setFormData] = useState({
     subject: '',
     text: ''
   });
 
   const handleChange = (e) => {
-    console.log(`Changing form field ${e.target.name} to ${e.target.value}`);
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
@@ -20,7 +18,6 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted with data:", formData);
     try {
       const response = await axios.post('/api/send-email', formData);
       console.log(response.data.message);
