@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import '../Navigation.css'; // Ensure this path is correct
 
 function Navigation() {
+  console.log("Navigation component is rendering");
+
   return (
     <nav>
       <ul>
@@ -26,11 +28,9 @@ function Navigation() {
             <button>Contact</button>
           </Link>
         </li>
-        
       </ul>
     </nav>
   );
 }
 
 export default Navigation;
-

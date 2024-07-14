@@ -6,6 +6,8 @@ function About() {
   const fullText = "Hello! My name is Gabriella Esquibel and I am a product of the results when you combine art and technology. I've learned a series of artistic softwares including Blender, Adobe Suite, Procreate, and Programming!";
 
   useEffect(() => {
+    console.log("About component mounted");
+
     let currentIndex = 0;
     const interval = setInterval(() => {
       setDisplayedText(fullText.substring(0, currentIndex + 1));
@@ -15,7 +17,10 @@ function About() {
       }
     }, 50); // Adjust the speed by changing the interval (in ms)
 
-    return () => clearInterval(interval);
+    return () => {
+      clearInterval(interval);
+      console.log("About component unmounted");
+    };
   }, []);
 
   return (
@@ -27,5 +32,6 @@ function About() {
 }
 
 export default About;
+
 
 
