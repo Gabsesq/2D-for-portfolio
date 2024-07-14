@@ -1,0 +1,38 @@
+.Home {
+    height: 100%;
+    background-color: #7BA583; /* Ensure the background color matches */
+    border: 2px solid red; /* Debugging border */
+  }
+  
+  .App-header {
+    background-color: #7BA583;
+    min-height: 10vh; /* Adjust as needed to reduce blank space */
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
+    font-family: 'nokiafc22', sans-serif;
+    z-index: 10; /* Ensure it stays above the image */
+    position: relative;
+    border: 2px solid blue; /* Debugging border */
+  }
+  
+  .image-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center; /* Center the image horizontally if needed */
+    position: relative; /* Ensure it stays in the document flow */
+    top: 0; /* Adjust as needed */
+    border: 2px solid green; /* Debugging border */
+  }
+  
+  .image-container img {
+    width: 100%; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid yellow; /* Debugging border */
+  }
+  

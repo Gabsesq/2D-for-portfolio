@@ -17,15 +17,16 @@ function Navigation() {
           </Link>
         </li>
         <li>
-          <Link to="/Contact">
-            <button>Contact</button>
-          </Link>
-        </li>
-        <li>
           <Link to="/Projects">
             <button>Projects</button>
           </Link>
         </li>
+        <li>
+          <Link to="/Contact">
+            <button>Contact</button>
+          </Link>
+        </li>
+        
       </ul>
     </nav>
   );

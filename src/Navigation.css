@@ -1,18 +1,41 @@
+/* Add this to your CSS file */
+@font-face {
+  font-family: 'nokiafc22';
+  src: url('./assets/nokiafc22.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+nav {
+  background-color: #7BA583; /* Set the background color */
+  padding: 10px 0; /* Optional: Add some padding to make it look better */
+  position: fixed; /* Fix the navigation bar */
+  bottom: 0; /* Position it at the bottom */
+  width: 100%; /* Make it span the full width */
+  z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center; /* Center align the nav items */
-    gap: 10px;
-  }
-  
-  nav ul li {
-    display: inline;
-  }
-  
-  nav ul li button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center align the nav items */
+  gap: 10px;
+  margin: 0; /* Ensure no margin to avoid shifting */
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li button {
+  font-family: 'nokiafc22', sans-serif;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #8c9f8f;
+  background-image: repeating-linear-gradient(0deg, #333333, #333333 10px, transparent 10px, transparent 20px, #333333 20px), repeating-linear-gradient(90deg, #333333, #333333 10px, transparent 10px, transparent 20px, #333333 20px), repeating-linear-gradient(180deg, #333333, #333333 10px, transparent 10px, transparent 20px, #333333 20px), repeating-linear-gradient(270deg, #333333, #333333 10px, transparent 10px, transparent 20px, #333333 20px);
+  background-size: 3px 100%, 100% 3px, 3px 100%, 100% 3px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+}

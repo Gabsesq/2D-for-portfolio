@@ -1,13 +1,17 @@
 import React from 'react';
 import ImageComponent from './ImageComponent';
+import '../Home.css';
+import '../App.css';
 
 function Home() {
   return (
-    <div>
+    <div className="Home">
       <header className="App-header">
-        <ImageComponent />
-        <p>WELCOME TO MY PORTFOLIO</p>
+        <p>WELCOME TO MY PORTFOLIO !!!</p>
       </header>
+      <div className="image-container">
+        <ImageComponent />
+      </div>
     </div>
   );
 }

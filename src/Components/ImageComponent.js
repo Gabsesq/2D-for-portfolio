@@ -4,7 +4,7 @@ import UntitledArtwork from '../assets/Untitled_Artwork.png'; // Ensure the path
 
 function ImageComponent() {
   return (
-    <div>
+    <div className="image-container">
       <img src={UntitledArtwork} alt="Artwork" className="App-logo" />
     </div>
   );

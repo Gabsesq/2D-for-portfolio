@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'nokiafc22';
+    src: url('./assets/nokiafc22.ttf') format('truetype'); /* Adjust the path if necessary */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'nokiafc22', sans-serif;
+    background-color: #7BA583;
+  }
+  
+  #root {
+    height: 100%;
+  }
+  
+  .container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #7BA583; /* Ensure the container has the same background */
+  }
+  
+  .about-header {
+    font-size: calc(10px + 2vmin);
+    color: black;
+    font-family: 'nokiafc22', sans-serif;
+    text-align: center;
+    margin-top: 20px; /* Adjust as needed */
+  }
+  
+  .about-content {
+    font-size: 1.2rem; /* Adjust as needed */
+    color: black;
+    font-family: 'nokiafc22', sans-serif;
+    text-align: center;
+    margin: 20px; /* Adjust as needed */
+  }
+  
