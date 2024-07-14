@@ -1,7 +1,6 @@
 .Home {
     height: 100%;
     background-color: #7BA583; /* Ensure the background color matches */
-    border: 2px solid red; /* Debugging border */
   }
   
   .App-header {
@@ -17,7 +16,6 @@
     font-family: 'nokiafc22', sans-serif;
     z-index: 10; /* Ensure it stays above the image */
     position: relative;
-    border: 2px solid blue; /* Debugging border */
   }
   
   .image-container {
@@ -27,12 +25,11 @@
     text-align: center; /* Center the image horizontally if needed */
     position: relative; /* Ensure it stays in the document flow */
     top: 0; /* Adjust as needed */
-    border: 2px solid green; /* Debugging border */
+    height:auto;
   }
   
   .image-container img {
-    width: 100%; /* Adjust as needed */
+    width: 50%; /* Adjust as needed */
     height: auto; /* Maintain aspect ratio */
-    border: 2px solid yellow; /* Debugging border */
   }
   
