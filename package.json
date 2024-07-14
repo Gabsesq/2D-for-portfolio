@@ -2,6 +2,7 @@
   "name": "2d-for-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://2-d-for-portfolio.vercel.app/",
   "dependencies": {
     "@material-tailwind/react": "^2.1.9",
     "@testing-library/jest-dom": "^5.17.0",
