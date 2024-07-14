@@ -4,6 +4,8 @@ import '../Home.css';
 import '../App.css';
 
 function Home() {
+  console.log("Home component is rendering");
+
   return (
     <div className="Home">
       <header className="App-header">
