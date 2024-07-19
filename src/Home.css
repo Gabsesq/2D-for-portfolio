@@ -1,10 +1,10 @@
 .Home {
     height: 100%;
-    background-color: #7BA583; /* Ensure the background color matches */
+    background-color: #7ea05a; /*#8c9f8f*/
   }
   
   .App-header {
-    background-color: #7BA583;
+    background-color: #7ea05a; /*#8c9f8f*/
     min-height: 10vh; /* Adjust as needed to reduce blank space */
     margin-top: 5%;
     display: flex;
