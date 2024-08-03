@@ -1,37 +1,33 @@
+// api/send-email.js
 const nodemailer = require('nodemailer');
 
-export default async function handler(req, res) {
+export default async function sendEmail(req, res) {
   if (req.method === 'POST') {
-    const { subject, text } = req.body;
+    const { name, subject, text, contactInfo } = req.body;
 
-    // Create a transporter
-    let transporter = nodemailer.createTransport({
-      service: 'gmail',
+    const transporter = nodemailer.createTransport({
+      service: 'Gmail', // Use your email service
       auth: {
         user: process.env.EMAIL_USER, // Your email address
-        pass: process.env.EMAIL_PASS  // Your email password
-      }
+        pass: process.env.EMAIL_PASS, // Your email password
+      },
     });
 
-    // Email options
-    let mailOptions = {
+    const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: 'gabbyesquibel1999@gmail.com', // Your email address
-      subject: subject,
-      text: text
+      to: process.env.EMAIL_USER, // Send to your own email
+      subject: `New Contact Form Submission: ${subject}`,
+      text: `Name: ${name}\nContact Info: ${contactInfo}\n\nMessage:\n${text}`,
     };
 
-    // Send email
-    transporter.sendMail(mailOptions, function(error, info) {
-      if (error) {
-        return res.status(500).json({ message: 'Error sending email', error });
-      } else {
-        return res.status(200).json({ message: 'Email sent successfully' });
-      }
-    });
+    try {
+      await transporter.sendMail(mailOptions);
+      res.status(200).json({ message: 'Email sent successfully!' });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      res.status(500).json({ message: 'Error sending email', error });
+    }
   } else {
-    res.setHeader('Allow', ['POST']);
-    res.status(405).end(`Method ${req.method} Not Allowed`);
+    res.status(405).json({ message: 'Only POST requests are allowed' });
   }
 }
-

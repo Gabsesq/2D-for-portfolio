@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import '../Contact.css'; // Assuming you have styles for the form
+import '../Contact.css';
 
 function Contact() {
-  console.log("Contact component is rendering");
   const [formData, setFormData] = useState({
+    name: '',
     subject: '',
-    text: ''
+    text: '',
+    contactInfo: ''
   });
 
   const handleChange = (e) => {
@@ -19,18 +20,28 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('/api/send-email', formData);
+      const response = await axios.post('/api/send-email', formData); // Send to Vercel API
       console.log(response.data.message);
+      alert('Email sent successfully!');
     } catch (error) {
       console.error('Error sending email:', error);
+      alert('Failed to send email. Please try again later.');
     }
   };
 
   return (
     <form className="contact-form" onSubmit={handleSubmit}>
       <header className="rand">
-        Please text me an email below!~~~
+        Please text me below!~~~
       </header>
+      <input
+        type="text"
+        name="name"
+        placeholder="Name"
+        value={formData.name}
+        onChange={handleChange}
+        required
+      />
       <input
         type="text"
         name="subject"
@@ -45,7 +56,15 @@ function Contact() {
         value={formData.text}
         onChange={handleChange}
         required
-        rows="10" // Adjust the number of rows to make it bigger
+        rows="10"
+      />
+      <input
+        type="text"
+        name="contactInfo"
+        placeholder="Contact Info"
+        value={formData.contactInfo}
+        onChange={handleChange}
+        required
       />
       <button type="submit">Send Email</button>
     </form>
