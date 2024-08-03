@@ -1,0 +1,9 @@
+.about-image {
+    width: 1000%; /* Set the width to a percentage of the parent container's width */
+    max-width: 400px; /* Optionally limit the maximum width */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    
+    display: block;
+    margin: 20px auto; /* Centers the image horizontally and adds margin */
+  }
+  

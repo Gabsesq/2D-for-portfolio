@@ -20,10 +20,12 @@
   
   .container {
     margin: 0;
-    padding: 0;
+    padding: 50px;
     width: 100%;
     text-align: center;
     background-color: #7ea05a; /* #7BA583; Ensure the container has the same background */
+    padding: 50px;
+    min-height: 1200px;
   }
   
   .about-header {
