@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import '../Contact.css';
+import '../Contact.css'; // Adjust this path as necessary
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -20,7 +20,11 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('/api/send-email', formData); // Send to Vercel API
+      const response = await axios.post('/api/send-email', formData, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
       console.log(response.data.message);
       alert('Email sent successfully!');
     } catch (error) {
@@ -31,9 +35,6 @@ function Contact() {
 
   return (
     <form className="contact-form" onSubmit={handleSubmit}>
-      <header className="rand">
-        Please text me below!~~~
-      </header>
       <input
         type="text"
         name="name"
