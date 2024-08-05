@@ -2,6 +2,10 @@
 const nodemailer = require('nodemailer');
 
 export default async function sendEmail(req, res) {
+  console.log('Request method:', req.method);
+  console.log('Request body:', req.body);
+  console.log('Email credentials:', process.env.EMAIL_USER, process.env.EMAIL_PASS);
+  
   if (req.method === 'POST') {
     const { name, subject, text, contactInfo } = req.body;
 
