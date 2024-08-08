@@ -11,37 +11,38 @@
     height: 100%;
     width: 100%;
     font-family: 'nokiafc22', sans-serif;
-    background-color: #7ea05a; /* #7BA583;*/
+    background-color: #f2feff; /* #7BA583;*/
   }
   
   #root {
     height: 100%;
   }
-  
-  .container {
-    margin: 0;
-    padding: 50px;
-    width: 100%;
-    text-align: center;
-    background-color: #7ea05a; /* #7BA583; Ensure the container has the same background */
-    padding: 50px;
-    min-height: 1200px;
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
   
-  .about-header {
-    font-size: calc(10px + 2vmin);
-    color: black;
-    font-family: 'nokiafc22', sans-serif;
-    text-align: center;
-    margin-top: 20px; /* Adjust as needed */
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: Left;
+    justify-content: center;
   }
   
-  .about-content {
-    font-size: 1.2rem; /* Adjust as needed */
-    color: black;
-    font-family: 'nokiafc22', sans-serif;
-    text-align: center;
-    margin: 20px; /* Adjust as needed */
-    white-space: pre-wrap; /* Preserve whitespace for better readability */
+  .about-item {
+    width: 33.33%; /* Third of the size */
+    height: auto;
+    opacity: 0;
+    transform: translateX(-100%); /* Start off-screen */
+    transition: opacity 0.5s ease-in-out;
   }
   
+  .about-item.visible {
+    animation: slideInLeft 0.5s forwards; /* Slide in and make visible */
+  }

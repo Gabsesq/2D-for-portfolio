@@ -11,12 +11,14 @@
     background-image: url('./assets/glitch.jpeg'); /* Updated path to your glitch image */
     background-repeat: no-repeat;
     background-size: cover; /* Cover the entire area to ensure full width and height */
-    opacity: 1%; /* Start fully transparent */
-    display: block; /* Initially hidden, shown during animation */
+    opacity: 10%; /* Start fully transparent */
     background-blend-mode: overlay;
     background-color: rgba(0,128,0,0.5);
   }
-  
+  .App {
+    position: relative; /* Ensure the ::before pseudo-element covers the App */
+    z-index: 1; /* Set a lower z-index to ensure content is below the overlay */
+  }
   @keyframes glitch-animation {
     0% {
       top: 0%; /* Start just below the view */
@@ -53,7 +55,7 @@
   }
   
   .App.glitch-active::after {
-    animation: glitch-animation .3s forwards; /* Adjust duration as needed */
+    animation: glitch-animation .5s forwards; /* Adjust duration as needed */
   }
 
 

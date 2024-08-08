@@ -2,6 +2,8 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import GO99VID from '../assets/GO99VID.mov'; // Adjust the path as necessary
+import RORclass from '../assets/RORclass.mp4'; // Adjust the path as necessary
 
 function ProjectShowcase() {
   console.log("ProjectShowcase component is rendering");
@@ -11,22 +13,17 @@ function ProjectShowcase() {
       <Row>
         <Col>
           <div className="video-container">
-            <iframe
-              width="100%"
-              height="315"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ" // Replace with your video URL
-              title="Project Demo Video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+            <video width="115%" height="315" controls>
+              <source src={GO99VID} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </Col>
         <Col>
           <div className="product-description">
-            <h2>Product Title 2</h2>
+            <h2>GO 99</h2>
             <p>
-              This is the description of the first product. It includes details about the features, benefits, and usage of the product. You can elaborate on the specifics here to give users a comprehensive understanding of what the product offers.
+              Go99 is one of the worlds oldest boardgames, dating back 4000 years in China. This is an image processing based project used to find the winner to the game. I created this in google colab using numpy, matplotlib, and cv2.
             </p>
           </div>
         </Col>
@@ -35,23 +32,18 @@ function ProjectShowcase() {
       <Row>
         <Col>
           <div className="product-description">
-            <h2>Product Title 1</h2>
+            <h2>Library Database</h2>
             <p>
-              This is the description of the first product. It includes details about the features, benefits, and usage of the product. You can elaborate on the specifics here to give users a comprehensive understanding of what the product offers.
+              This project is a library database that stores users, authors, books, various libraries, and more. I used Ruby on rails and vue js for minimal styling. The focus of this project was to learn ROR and to learn SQLite and database relationships.
             </p>
           </div>
         </Col>
         <Col>
           <div className="video-container">
-            <iframe
-              width="100%"
-              height="315"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ" // Replace with your video URL
-              title="Project Demo Video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+            <video width="115%" height="315" controls>
+              <source src={RORclass} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </Col>
       </Row>
@@ -60,3 +52,4 @@ function ProjectShowcase() {
 }
 
 export default ProjectShowcase;
+
