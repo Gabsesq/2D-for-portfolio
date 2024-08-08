@@ -4,7 +4,7 @@ nav{
   left: 0;
   width: 50%;
   max-width: 500px;
-  background-color: #ffd1f7; /* Background color for the nav bar */
+  
   z-index: 1000; /* Ensure it stays on top of other content */
   display: flex;
   justify-content: center;

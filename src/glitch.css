@@ -21,7 +21,7 @@
   }
   @keyframes glitch-animation {
     0% {
-      top: 0%; /* Start just below the view */
+      top: 1%; /* Start just below the view */
       opacity: 0.1; /* Slightly visible at the start */
     }
     10% {

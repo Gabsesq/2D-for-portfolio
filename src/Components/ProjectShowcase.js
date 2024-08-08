@@ -2,48 +2,83 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import GO99VID from '../assets/GO99VID.mov'; // Adjust the path as necessary
-import RORclass from '../assets/RORclass.mp4'; // Adjust the path as necessary
 
 function ProjectShowcase() {
   console.log("ProjectShowcase component is rendering");
 
   return (
     <Container>
+      {/* Microsoft Plugin Project */}
+      <Row>
+        <Col>
+          <div className="product-description">
+            <h2>Microsoft Plugin Project</h2>
+            <p>
+              This project showcases a Microsoft email plugin that my team and I developed. We utilized a global web API to re-use signatures, stored locally. We used scrum/agile methodologies, CI/CD practices, and m FINISH LATER
+            </p>
+          </div>
+        </Col>
+        <Col>
+          <div className="video-container">
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/0TyF44URubE"
+              title="Microsoft Plugin Project"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </Col>
+      </Row>
+
+      {/* GO 99 Project */}
       <Row>
         <Col>
           <div className="video-container">
-            <video width="115%" height="315" controls>
-              <source src={GO99VID} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/8ZFuvZfWiSg"
+              title="GO 99 Project"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
         </Col>
         <Col>
           <div className="product-description">
             <h2>GO 99</h2>
             <p>
-              Go99 is one of the worlds oldest boardgames, dating back 4000 years in China. This is an image processing based project used to find the winner to the game. I created this in google colab using numpy, matplotlib, and cv2.
+              Go99 is one of the world's oldest board games, dating back 4000 years in China. This is an image processing-based project used to find the winner of the game. I created this in Google Colab using numpy, matplotlib, and cv2.
             </p>
           </div>
         </Col>
       </Row>
 
+      {/* Library Database Project */}
       <Row>
         <Col>
           <div className="product-description">
             <h2>Library Database</h2>
             <p>
-              This project is a library database that stores users, authors, books, various libraries, and more. I used Ruby on rails and vue js for minimal styling. The focus of this project was to learn ROR and to learn SQLite and database relationships.
+              This project is a library database that stores users, authors, books, various libraries, and more. I used Ruby on Rails and Vue.js for minimal styling. The focus of this project was to learn ROR and to learn SQLite and database relationships.
             </p>
           </div>
         </Col>
         <Col>
           <div className="video-container">
-            <video width="115%" height="315" controls>
-              <source src={RORclass} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/IJTRciIQeKI"
+              title="Library Database Project"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
         </Col>
       </Row>
@@ -52,4 +87,3 @@ function ProjectShowcase() {
 }
 
 export default ProjectShowcase;
-
