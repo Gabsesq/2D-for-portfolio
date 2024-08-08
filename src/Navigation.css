@@ -4,11 +4,12 @@ nav{
   left: 0;
   width: 50%;
   max-width: 500px;
+  max-height: 20%;
   
   z-index: 1000; /* Ensure it stays on top of other content */
   display: flex;
   justify-content: center;
-  margin-left: 35%;
+  margin-left: 20%;
   border-radius: 30px;
 }
 nav ul {
