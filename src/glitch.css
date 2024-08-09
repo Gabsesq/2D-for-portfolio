@@ -11,7 +11,7 @@
     background-image: url('./assets/glitch.jpeg'); /* Updated path to your glitch image */
     background-repeat: no-repeat;
     background-size: cover; /* Cover the entire area to ensure full width and height */
-    opacity: 10%; /* Start fully transparent */
+    opacity: 1%; /* Start fully transparent */
     background-blend-mode: overlay;
     background-color: rgba(0,128,0,0.5);
   }

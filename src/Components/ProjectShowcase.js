@@ -2,6 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import '../project.css'; // Ensure this path is correct
 
 function ProjectShowcase() {
   console.log("ProjectShowcase component is rendering");
@@ -12,9 +13,9 @@ function ProjectShowcase() {
       <Row>
         <Col>
           <div className="product-description">
-            <h2>Microsoft Plugin Project</h2>
+            <h2>MICROSOFT PLUGIN</h2>
             <p>
-              This project showcases a Microsoft email plugin that my team and I developed. We utilized a global web API to re-use signatures, stored locally. We used scrum/agile methodologies, CI/CD practices, and m FINISH LATER
+            "This project showcases a Microsoft email plugin that my team and I developed. We utilized a global web API for local storage in order to re-use email signatures. We used Scrum/Agile methodologies, CI/CD practices, and managed the entire development lifecycle."
             </p>
           </div>
         </Col>
@@ -62,7 +63,7 @@ function ProjectShowcase() {
       <Row>
         <Col>
           <div className="product-description">
-            <h2>Library Database</h2>
+            <h2>LIBRARY DATABASE</h2>
             <p>
               This project is a library database that stores users, authors, books, various libraries, and more. I used Ruby on Rails and Vue.js for minimal styling. The focus of this project was to learn ROR and to learn SQLite and database relationships.
             </p>

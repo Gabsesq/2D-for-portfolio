@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'NokiaKokia';
+    src: url('./assets/NokiaKokia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Apply NokiaKokia font to all h2 tags */
+h2 {
+    font-family: 'NokiaKokia', sans-serif;
+}
+
+/* Set a global sans-serif font for the body */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif !important; /* Use regular sans-serif for the rest of the text */
+    background-color: #f2feff; /* #7BA583;*/
+}
+
+/* Product descriptions will inherit the global font-family, which is sans-serif */
+.product-description {
+    padding: .5rem;
+}
+
+/* Other styles */
+.row-spacing {
+    margin-bottom: 100rem; /* Adjust the spacing as needed */
+}
+
+.video-container {
+    padding: .5rem;
+    border-color: aqua;
+}
+
+.container {
+    min-width: 98vw;
+}

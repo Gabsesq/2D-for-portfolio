@@ -1,50 +1,68 @@
+@font-face {
+  font-family: 'nokiafc22';
+  src: url('./assets/nokiafc22.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply nokiafc22 font to the entire page */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'nokiafc22', sans-serif !important;
+  background-color: #f2feff; /* #7BA583;*/
+}
+
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 800px;
-    margin: 50px auto; /* Add margin-top to move the form down */
-    padding: 20px;
-    background-color: #ffd1f7;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-image: repeating-linear-gradient(0deg, #333333, #333333 10px, transparent 10px, transparent 20px, #333333 20px), repeating-linear-gradient(90deg, #333333, #333333 10px, transparent 10px, transparent 20px, #333333 20px), repeating-linear-gradient(180deg, #333333, #333333 10px, transparent 10px, transparent 20px, #333333 20px), repeating-linear-gradient(270deg, #333333, #333333 10px, transparent 10px, transparent 20px, #333333 20px);
-    background-size: 3px 100%, 100% 3px, 3px 100%, 100% 3px;
-    background-position: 0 0, 0 0, 100% 0, 0 100%;
-    background-repeat: no-repeat;
-  }
-  
-  .contact-form input[type="text"],
-  .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #dcfdff; /*#8c9f8f*/
-    border-radius: 4px;
-    font-size: 16px;
-  }
-  
-  .contact-form textarea {
-    resize: vertical; /* Allows the user to resize the textarea vertically */
-  }
-  
-  .contact-form button {
-    padding: 10px 20px;
-    background-color: #f534a4;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .contact-form button:hover {
-    background-color: #d43793;
-  }
-  
-  .rand {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    font-size: 16px;
-  }
+  display: flex;
+  flex-direction: column;
+  min-width: 80vw;
+  max-width: 90vw;
+  margin: 50px auto; /* Add margin-top to move the form down */
+  padding: 20px;
+  background-color: #a7c1d3;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-image: repeating-linear-gradient(0deg, #333333, #333333 10px, transparent 10px, transparent 20px, #333333 20px), repeating-linear-gradient(90deg, #333333, #333333 10px, transparent 10px, transparent 20px, #333333 20px), repeating-linear-gradient(180deg, #333333, #333333 10px, transparent 10px, transparent 20px, #333333 20px), repeating-linear-gradient(270deg, #333333, #333333 10px, transparent 10px, transparent 20px, #333333 20px);
+  background-size: 3px 100%, 100% 3px, 3px 100%, 100% 3px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 20%;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #dcfdff; /*#8c9f8f*/
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  resize: vertical; /* Allows the user to resize the textarea vertically */
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #4c83aa;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-form button:hover {
+  background-color: #305a79;
+}
+
+.rand {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
