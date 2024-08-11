@@ -11,15 +11,14 @@ function ProjectShowcase() {
     <Container>
       {/* Microsoft Plugin Project */}
       <Row>
-        <Col>
+        
           <div className="product-description">
             <h2>MICROSOFT PLUGIN</h2>
             <p>
             "This project showcases a Microsoft email plugin that my team and I developed. We utilized a global web API for local storage in order to re-use email signatures. We used Scrum/Agile methodologies, CI/CD practices, and managed the entire development lifecycle."
             </p>
           </div>
-        </Col>
-        <Col>
+       
           <div className="video-container">
             <iframe
               width="100%"
@@ -31,12 +30,20 @@ function ProjectShowcase() {
               allowFullScreen
             ></iframe>
           </div>
-        </Col>
+      
       </Row>
 
       {/* GO 99 Project */}
       <Row>
-        <Col>
+        
+
+          <div className="product-description">
+            <h2>GO 99</h2>
+            <p>
+              Go99 is one of the world's oldest board games, dating back 4000 years in China. This is an image processing-based project used to find the winner of the game. I created this in Google Colab using numpy, matplotlib, and cv2.
+            </p>
+          </div>
+
           <div className="video-container">
             <iframe
               width="100%"
@@ -48,28 +55,19 @@ function ProjectShowcase() {
               allowFullScreen
             ></iframe>
           </div>
-        </Col>
-        <Col>
-          <div className="product-description">
-            <h2>GO 99</h2>
-            <p>
-              Go99 is one of the world's oldest board games, dating back 4000 years in China. This is an image processing-based project used to find the winner of the game. I created this in Google Colab using numpy, matplotlib, and cv2.
-            </p>
-          </div>
-        </Col>
+        
       </Row>
 
       {/* Library Database Project */}
       <Row>
-        <Col>
+        
           <div className="product-description">
             <h2>LIBRARY DATABASE</h2>
             <p>
               This project is a library database that stores users, authors, books, various libraries, and more. I used Ruby on Rails and Vue.js for minimal styling. The focus of this project was to learn ROR and to learn SQLite and database relationships.
             </p>
           </div>
-        </Col>
-        <Col>
+        
           <div className="video-container">
             <iframe
               width="100%"
@@ -81,7 +79,7 @@ function ProjectShowcase() {
               allowFullScreen
             ></iframe>
           </div>
-        </Col>
+        
       </Row>
     </Container>
   );

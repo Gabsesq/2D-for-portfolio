@@ -31,8 +31,9 @@ body, html {
 }
 
 .video-container {
-    padding: .5rem;
+    padding: .001rem;
     border-color: aqua;
+    margin-bottom: 10%;
 }
 
 .container {
