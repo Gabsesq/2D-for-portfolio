@@ -10,6 +10,8 @@ import ProjectShowcase from './Components/ProjectShowcase';
 import Navigation from './Components/Navigation';
 import TimeDisplay from './Components/TimeDisplay'; // Import the TimeDisplay component
 
+import TetrisGame from './Components/TetrisGame';
+
 function App() {
   useEffect(() => {
     const glitchEffect = () => {
@@ -38,6 +40,7 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Projects" element={<ProjectShowcase />} />
+          <Route path="/Tetris" element={<TetrisGame />} /> {/* New route for Tetris */}
         </Routes>
       </div>
     </Router>

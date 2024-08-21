@@ -19,7 +19,7 @@ class TimeDisplay extends React.Component {
 
   getTime = () => {
     const today = new Date();
-    const curTime = today.getHours() + ':' + String(today.getMinutes()).padStart(2, '0') + ':' + String(today.getSeconds()).padStart(2, '0');
+    const curTime = today.getHours() + ':' + String(today.getMinutes()).padStart(2, '0');
     this.setState({ curTime });
   };
 
