@@ -4,7 +4,7 @@
     right: 10px;
     color: rgb(50, 66, 54);
     font-family: 'nokiafc22', sans-serif;
-    font-size: 1rem;
+    font-size: .5rem;
     padding: 4px 5px;
     border-radius: 8px;
     z-index: 1000; /* Make sure it appears on top of other elements */
@@ -13,6 +13,6 @@
   .charge-icon {
     margin-top: 0;
     width: auto; /* Adjust the size of the image */
-    height: 20px; /* Keep the image square */
+    height: 10px; /* Keep the image square */
     margin-right: 5px; /* Space between the image and the time */
   }
