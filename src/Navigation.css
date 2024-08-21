@@ -11,7 +11,7 @@ nav{
   justify-content: center;
   margin-left: 25%;
   border-radius: 30px;
-  margin-bottom: 5% 
+  margin-bottom: 2% 
 }
 nav ul {
   list-style: none;
@@ -22,7 +22,7 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 10px; /* Space between items */
+  margin: 0 2px; /* Space between items */
 }
 
 nav ul li img {
