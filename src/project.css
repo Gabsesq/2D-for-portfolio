@@ -7,7 +7,10 @@
 
 /* Apply NokiaKokia font to all h2 tags */
 h2 {
-    font-family: 'NokiaKokia', sans-serif;
+    font-family: 'nokiafc22', sans-serif !important;
+}
+p {
+    font-family:  sans-serif;
 }
 
 /* Set a global sans-serif font for the body */

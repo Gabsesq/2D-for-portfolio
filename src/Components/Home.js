@@ -9,7 +9,7 @@ function Home() {
   return (
     <div className="Home">
       <header className="App-header">
-        <p>WELCOME TO MY PORTFOLIO</p>
+        <p className='Welcome'>YOU HAVE ENTERED GABRIELLA'S PHONE:</p>
       </header>
       <div className="image-container">
         <ImageComponent />

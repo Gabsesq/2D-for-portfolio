@@ -4,13 +4,14 @@ nav{
   left: 0;
   width: 50%;
   max-width: 500px;
-  max-height: 15%;
+  max-height: 12%;
   
   z-index: 1000; /* Ensure it stays on top of other content */
   display: flex;
   justify-content: center;
   margin-left: 25%;
   border-radius: 30px;
+  margin-bottom: 5% 
 }
 nav ul {
   list-style: none;
