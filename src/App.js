@@ -8,26 +8,22 @@ import About from './Components/About';
 import Contact from './Components/Contact';
 import ProjectShowcase from './Components/ProjectShowcase';
 import Navigation from './Components/Navigation';
+import TimeDisplay from './Components/TimeDisplay'; // Import the TimeDisplay component
 
 function App() {
   useEffect(() => {
     const glitchEffect = () => {
       const appElement = document.querySelector('.App');
       if (appElement) {
-        // Remove existing animation class if any
         appElement.classList.remove('glitch-active');
-
-        // Trigger reflow to restart the animation
         void appElement.offsetWidth;
-
-        // Add the class back to restart the animation
         appElement.classList.add('glitch-active');
       }
     };
 
     const interval = setInterval(() => {
       glitchEffect();
-    }, Math.random() * 10000 + 30000); // Randomly between 30 and 40 seconds
+    }, Math.random() * 10000 + 30000);
 
     return () => clearInterval(interval);
   }, []);
@@ -36,6 +32,7 @@ function App() {
     <Router>
       <div className="App">
         <Navigation />
+        <TimeDisplay /> {/* Add the TimeDisplay component */}
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
