@@ -1,0 +1,9 @@
+Hello! My name is Gabriella Esquibel. I am a new grad looking to become a fullstack developer. My passion is combining art and technology!
+
+
+"My favorite languages are Java, Python and secretly LISP", 
+      "I picked tech because of the endless learning",
+      "Some side softwares I've learned along the way: Procreate, adobe suite, blender, animation",
+      "I played college golf, love/hate relationship", 
+      "Singing and dancing is one of my favorite pass-times", 
+      "I love my dogs!!!"

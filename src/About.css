@@ -36,7 +36,7 @@
   }
   
   .about-item {
-    width: 33.33%; /* Third of the size */
+    width: 70%; /* Third of the size */
     height: auto;
     opacity: 0;
     transform: translateX(-100%); /* Start off-screen */
