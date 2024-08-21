@@ -34,6 +34,7 @@ function Contact() {
   };
 
   return (
+    <div classname='cont'>
     <form className="contact-form" onSubmit={handleSubmit}>
       <input
         type="text"
@@ -69,6 +70,7 @@ function Contact() {
       />
       <button type="submit">Send Email</button>
     </form>
+    </div>
   );
 }
 

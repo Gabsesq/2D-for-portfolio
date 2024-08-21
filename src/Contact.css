@@ -13,7 +13,9 @@ body, html {
   width: 100%;
   background-color: #f2feff; /* #7BA583;*/
 }
-
+.cont {
+  min-height: 120%vh;
+}
 .contact-form {
   font-family: 'nokiafc22', sans-serif !important;
   display: flex;
