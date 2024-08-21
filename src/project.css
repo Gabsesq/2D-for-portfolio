@@ -18,7 +18,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    width: 100%;
+    max-width: 100%;
     font-family: sans-serif !important; /* Use regular sans-serif for the rest of the text */
     background-color: #f2feff; /* #7BA583;*/
 }
@@ -40,5 +40,6 @@ body, html {
 }
 
 .container {
-    min-width: 98vw;
+    max-wdith: 100 vw;
+    padding:0rem;
 }
