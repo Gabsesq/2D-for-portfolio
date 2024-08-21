@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import '../About.css';
-import me from '../assets/TXTPICS/GOLF.png';
-import maddie from '../assets/TXTPICS/MADDIE.png';
-import oliver from '../assets/TXTPICS/OLIVER.png';
-import txt1 from '../assets/TXTPICS/txt1.png';
-import txt2 from '../assets/TXTPICS/TXT2.png'; 
-import txt3 from '../assets/TXTPICS/TXT3.png'; 
-import txt4 from '../assets/TXTPICS/TXT4.png'; 
-import txt5 from '../assets/TXTPICS/TXT5.png'; 
-import txt6 from '../assets/TXTPICS/TXT6.png';
 
 function About() {
-  const [visibleItems, setVisibleItems] = useState([false, false, false, false, false, false, false, false, false]);
+  const textItems = [
+    "Hello!",
+    "My name is Gabriella Esquibel. I am passionate about bringing ideas to life through art and technology.",
+    "I am a new grad who is looking for a full stack, backend, or frontend role.",
+    "My favorite languages are java and python. I have an array of Softwares and frameworks in my skillset such as: Reactjs, SQL, ROR, Tesseract, Expressjs, Node.js, and more.",
+    "I picked a career in Software Development because of the endless ability and necesity to learn new concepts. Applying these concepts and bringing ideas to life brings me fulfillment.",
+    "Some additional artistic softwares I know include: Blender, Adobe suite, and procreate",
+    "Please visit my messenger app in this phone to connect! (And checkout my image gallery if you have some time)",
+  ];
+
+  const [visibleItems, setVisibleItems] = useState(Array(textItems.length).fill(false));
 
   useEffect(() => {
     const timers = visibleItems.map((_, index) => {
@@ -21,7 +22,7 @@ function About() {
           newVisibleItems[index] = true;
           return newVisibleItems;
         });
-      }, index * 2000); // Each item appears 1 second after the previous one
+      }, index * 1000); // Each item appears 2 seconds after the previous one
     });
 
     return () => {
@@ -31,15 +32,11 @@ function About() {
 
   return (
     <div className="about-container">
-      <img src={txt1} alt="Text 1" className={`about-item ${visibleItems[0] ? 'visible' : ''}`} />
-      <img src={me} alt="GOLF" className={`about-item ${visibleItems[1] ? 'visible' : ''}`} />
-      <img src={txt2} alt="Text 2" className={`about-item ${visibleItems[2] ? 'visible' : ''}`} />
-      <img src={txt3} alt="Text 3" className={`about-item ${visibleItems[3] ? 'visible' : ''}`} />
-      <img src={txt4} alt="Text 4" className={`about-item ${visibleItems[4] ? 'visible' : ''}`} />
-      <img src={txt5} alt="Text 5" className={`about-item ${visibleItems[5] ? 'visible' : ''}`} />
-      <img src={txt6} alt="Text 6" className={`about-item ${visibleItems[6] ? 'visible' : ''}`} />
-      <img src={maddie} alt="Maddie" className={`about-item ${visibleItems[7] ? 'visible' : ''}`} />
-      <img src={oliver} alt="Oliver" className={`about-item ${visibleItems[8] ? 'visible' : ''}`} />
+      {textItems.map((text, index) => (
+        <div key={index} className={`text-bubble ${visibleItems[index] ? 'visible' : ''}`}>
+          {text}
+        </div>
+      ))}
     </div>
   );
 }

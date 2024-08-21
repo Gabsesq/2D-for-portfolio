@@ -5,44 +5,47 @@
     font-style: normal;
   }
   
-  body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    font-family: 'nokiafc22', sans-serif;
-    background-color: #f2feff; /* #7BA583;*/
-  }
-  
-  #root {
-    height: 100%;
-  }
-  @keyframes slideInLeft {
-    from {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
   .about-container {
     display: flex;
     flex-direction: column;
-    align-items: Left;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
+    padding: 20px;
+    min-height: 120vh;
+    
   }
   
-  .about-item {
-    width: 70%; /* Third of the size */
-    height: auto;
+  .text-bubble {
     opacity: 0;
-    transform: translateX(-100%); /* Start off-screen */
     transition: opacity 0.5s ease-in-out;
+    font-family: sans-serif !important;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: #a7c1d3; /* Light cyan background */
+    padding: 15px 20px;
+    border-radius: 25px;
+    position: relative;
+    width: fit-content;
+    max-width: 80%;
+    text-align: left;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
   }
   
-  .about-item.visible {
-    animation: slideInLeft 0.5s forwards; /* Slide in and make visible */
+  .text-bubble.visible {
+    opacity: 1;
   }
+  
+  .text-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -15px; /* Adjust position based on your preference */
+    left: 20px; /* Position the tail on the left side */
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #e0f7fa; /* Same as the background color of the bubble */
+    border-bottom: 0;
+    margin-left: -10px;
+    margin-bottom: -10px;
+  }
+  
