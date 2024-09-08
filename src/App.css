@@ -33,14 +33,6 @@ body, html {
   margin-bottom: 100rem; /* Adjust the spacing as needed */
 }
 
-.video-container {
-  padding: 1rem; /* Add some padding around the video container */
-}
-
-.product-description {
-  padding: 4rem; /* Add some padding around the product description */
-
-}
 
 .App-header {
   background-color: #f2feff; /* #7BA583;*/

@@ -27,14 +27,12 @@ body, html {
 
 /* Product descriptions will inherit the global font-family, which is sans-serif */
 .product-description {
-    padding: 1 rem;
+    padding-bottom: 1 rem;
 }
-
 
 
 .video-container {
     padding: 1 rem;
-
     margin-bottom: 10%;
 }
 

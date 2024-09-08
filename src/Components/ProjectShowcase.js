@@ -15,8 +15,10 @@ function ProjectShowcase() {
           <div className="product-description">
             <h2>MICROSOFT PLUGIN</h2>
             <p>
-            "This project showcases a Microsoft email plugin that my team and I developed. We utilized a global web API for local storage in order to re-use email signatures. We used Scrum/Agile methodologies, CI/CD practices, and managed the entire development lifecycle."
+            This project showcases a Microsoft email plugin that my team and I developed. We utilized a global web API for local storage in order to re-use email signatures. We used Scrum/Agile methodologies, CI/CD practices, and managed the entire development lifecycle.
             </p>
+            <p><b>Youtube Link: </b><a href="https://youtu.be/0TyF44URubE">Microsoft Plugin Video</a></p>
+            <p><b>Github Link: </b><a href="https://github.com/ScrumSquad3250/main">Microsoft Plugin Repo</a></p>
           </div>
        
           <div className="video-container">
@@ -42,6 +44,8 @@ function ProjectShowcase() {
             <p>
               Go99 is one of the world's oldest board games, dating back 4000 years in China. This is an image processing-based project used to find the winner of the game. I created this in Google Colab using numpy, matplotlib, and cv2.
             </p>
+            <p><b>Youtube Link: </b><a href="https://youtu.be/8ZFuvZfWiSg">GO99 Video</a></p>
+            <p><b>Github Link: </b><a href="https://github.com/Gabsesq/go99">GO99 Repo</a></p>
           </div>
 
           <div className="video-container">
@@ -66,6 +70,8 @@ function ProjectShowcase() {
             <p>
               This project is a library database that stores users, authors, books, various libraries, and more. I used Ruby on Rails and Vue.js for minimal styling. The focus of this project was to learn ROR and to learn SQLite and database relationships.
             </p>
+            <p><b>Youtube Link: </b><a href="https://youtu.be/IJTRciIQeKI">Library Video</a></p>
+            <p><b>Github Link: </b><a href="https://github.com/Gabsesq/Library">Library Repo</a></p>
           </div>
         
           <div className="video-container">
