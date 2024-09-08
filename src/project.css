@@ -8,9 +8,11 @@
 /* Apply NokiaKokia font to all h2 tags */
 h2 {
     font-family: 'nokiafc22', sans-serif !important;
+    
 }
 p {
     font-family:  sans-serif;
+    font-size:x-large;
 }
 
 /* Set a global sans-serif font for the body */
@@ -37,6 +39,6 @@ body, html {
 }
 
 .container {
-    max-width: 97vw;
-    padding:0rem;
+    max-width: 95vw;
+    padding:2rem;
 }
