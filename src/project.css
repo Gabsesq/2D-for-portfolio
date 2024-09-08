@@ -17,8 +17,8 @@ p {
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
-    max-width: 100%;
+    height: 100 vh;
+    max-width: 100 vw;
     font-family: sans-serif !important; /* Use regular sans-serif for the rest of the text */
     background-color: #f2feff; /* #7BA583;*/
 }
