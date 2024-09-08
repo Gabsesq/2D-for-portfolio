@@ -25,21 +25,18 @@ body, html {
 
 /* Product descriptions will inherit the global font-family, which is sans-serif */
 .product-description {
-    padding: .5rem;
+    padding: 1 rem;
 }
 
-/* Other styles */
-.row-spacing {
-    margin-bottom: 100rem; /* Adjust the spacing as needed */
-}
+
 
 .video-container {
-    padding: .001rem;
-    border-color: aqua;
+    padding: 1 rem;
+
     margin-bottom: 10%;
 }
 
 .container {
-    max-width: 100 vw;
+    max-width: 97vw;
     padding:0rem;
 }
