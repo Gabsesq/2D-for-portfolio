@@ -8,6 +8,30 @@ function ProjectShowcase() {
 
   return (
     <Container>
+      {/* This Portfolio */}
+      <Row>
+        <div className="product-description">
+          <h2>PORTFOLIO</h2>
+          <p>
+            This project is meant to show off a little bit of my personality and some of my tech skills. While there are a lot of features I'd like to add, I'd like to share my tech stack and thought process behind this site. I utilized Three-react-fiber, blender modeling, Gsap, Global Web API, and bootstrap. A separate 2d Site is rendered on top of my interactive 3d objects. Bringing a more fun and girly twist into programming brings me fulfillment.
+          </p>
+          <p><b>Youtube Link: </b><a href="https://www.youtube.com/watch?v=apQlgRh7tz8">Portfolio Video</a></p>
+          <p><b>Github Link: </b><a href="https://github.com/Gabsesq/Portfolio">Portfolio Repo</a></p>
+        </div>
+        <div className="video-container">
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/apQlgRh7tz8"
+            title="Eatsafe Demo"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </Row>
+
+
       {/* Eat Safe Project */}
       <Row>
         <div className="product-description">
