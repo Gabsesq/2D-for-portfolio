@@ -13,7 +13,7 @@ function ProjectShowcase() {
         <div className="product-description">
           <h2>PORTFOLIO</h2>
           <p>
-            This project is meant to show off a little bit of my personality and some of my tech skills. While there are a lot of features I'd like to add, I'd like to share my tech stack and thought process behind this site. I utilized Three-react-fiber, blender modeling, Gsap, Global Web API, and bootstrap. A separate 2d Site is rendered on top of my interactive 3d objects. Bringing a more fun and girly twist into programming brings me fulfillment.
+          I used React Three Fiber for interactive 3D objects, Blender for modeling, and GSAP for animations. The site integrates a 2D website on top of the 3D scene, adding a fun, girly twist to programming. I also built a Node.js Mailer API using Nodemailer for form submissions, securely sending messages to my inbox. I plan on furthering this project aesthetically. 
           </p>
           <p><b>Youtube Link: </b><a href="https://www.youtube.com/watch?v=apQlgRh7tz8">Portfolio Video</a></p>
           <p><b>Github Link: </b><a href="https://github.com/Gabsesq/Portfolio">Portfolio Repo</a></p>
