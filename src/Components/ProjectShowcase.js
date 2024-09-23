@@ -85,7 +85,7 @@ function ProjectShowcase() {
         <div className="product-description">
           <h2>MICROSOFT PLUGIN</h2>
           <p>
-            This project showcases a Microsoft email plugin that my team and I developed. We utilized a global web API for local storage in order to re-use email signatures. We used Scrum/Agile methodologies, CI/CD practices, and managed the entire development lifecycle.
+            This project showcases a Microsoft email plugin that my team and I developed. We utilized a global web API for local storage in order to re-use email signatures. We used Scrum/Agile methodologies, CI/CD Jenkins, and managed the entire development lifecycle.
           </p>
           <p><b>Youtube Link: </b><a href="https://youtu.be/0TyF44URubE">Microsoft Plugin Video</a></p>
           <p><b>Github Link: </b><a href="https://github.com/ScrumSquad3250/main">Microsoft Plugin Repo</a></p>
