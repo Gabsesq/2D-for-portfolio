@@ -31,7 +31,7 @@ body, html {
   max-width: 90vw;
   margin: 50px auto; /* Add margin-top to move the form down */
   padding: 20px;
-  background-color: #a7c1d3;
+  background-color:  rgba(255, 193, 205);
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-image: repeating-linear-gradient(0deg, #333333, #333333 10px, transparent 10px, transparent 20px, #333333 20px), repeating-linear-gradient(90deg, #333333, #333333 10px, transparent 10px, transparent 20px, #333333 20px), repeating-linear-gradient(180deg, #333333, #333333 10px, transparent 10px, transparent 20px, #333333 20px), repeating-linear-gradient(270deg, #333333, #333333 10px, transparent 10px, transparent 20px, #333333 20px);
@@ -58,7 +58,7 @@ body, html {
 
 .contact-form button {
   padding: 10px 20px;
-  background-color: #4c83aa;
+  background-color: rgba(255, 193, 205);
   color: white;
   border: none;
   border-radius: 4px;
@@ -67,7 +67,7 @@ body, html {
 }
 
 .contact-form button:hover {
-  background-color: #305a79;
+  background-color: rgba(255, 193, 205);
 }
 
 

@@ -18,22 +18,25 @@ body, html {
     height: 100 vh;
     max-width: 100 vw;
     font-family: sans-serif !important; /* Use regular sans-serif for the rest of the text */
-    background-color: #f2feff; /* #7BA583;*/
+    background-color: #ffc6dc; /* #7BA583;*/
 }
 
 /* Product descriptions will inherit the global font-family, which is sans-serif */
 .product-description {
     padding-bottom: 1 rem;
     font-size: 22px;
+    background-color: rgba(255, 193, 205, 0.9);
+    border-radius: 10px;
 }
 
 
 .video-container {
     padding: 1 rem;
     margin-bottom: 10%;
+    margin-top: 5%;
 }
 
 .container {
     max-width: 95vw;
-    padding:2rem;
+    padding:5rem;
 }

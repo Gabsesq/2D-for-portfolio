@@ -1,23 +1,32 @@
 .Home {
     height: 100%;
-    background-color: #f2feff; /*#8c9f8f*/
+
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   @keyframes openText {
-    0% {color:rgb(78, 114, 95);}
-    25% {color:rgb(36, 51, 43);}
-    50% {color:rgb(78, 114, 95);}
-    100% {color:rgb(36, 51, 43);}
+    0% {color:rgba(255, 193, 205);}
+    25% {color:rgb(255, 255, 255);}
+    50% {color:rgba(255, 193, 205);}
+    100% {color:rgb(255, 255, 255);}
+  }
+  .text-animation {
+    animation-name: openText;
+    animation-duration: 4s; /* Adjust the speed as needed */
+    animation-iteration-count: infinite; /* Repeat the animation indefinitely */
+    animation-direction: alternate; /* Makes the animation reverse direction */
   }
 
   .Welcome {
     font-family: 'nokiafc22', sans-serif;
     animation-name: openText;
     animation-duration: 4s;
-
   }
   
   .App-header {
-    background-color: #f2feff; /*#8c9f8f*/
+    
     min-height: 10vh; /* Adjust as needed to reduce blank space */
     margin-top: 7%;
     display: flex;
@@ -25,7 +34,7 @@
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    color: rgb(36, 51, 43);
+    color: rgb(255, 255, 255);
     font-family: 'nokiafc22', sans-serif;
     z-index: 10; /* Ensure it stays above the image */
     position: relative;
@@ -44,5 +53,7 @@
   .image-container img {
     width: 50%; /* Adjust as needed */
     height: auto; /* Maintain aspect ratio */
+    mix-blend-mode:multiply;
+    opacity: 0;
   }
   

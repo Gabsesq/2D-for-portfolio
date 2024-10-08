@@ -1,23 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.190840fc.css",
-    "main.js": "/static/js/main.e1a08413.js",
+    "main.css": "/static/css/main.a70f2bcc.css",
+    "main.js": "/static/js/main.55fba020.js",
     "static/js/453.0cdc3013.chunk.js": "/static/js/453.0cdc3013.chunk.js",
+    "static/media/BabyGabby.jpg": "/static/media/BabyGabby.94a653938f988b45d474.jpg",
+    "static/media/charge.jpg": "/static/media/charge.d264bbc314b57bc7e462.jpg",
     "static/media/Untitled_Artwork.png": "/static/media/Untitled_Artwork.9800954585a15c7081ca.png",
-    "static/media/contact.png": "/static/media/contact.384aa2ff004b97df614d.png",
-    "static/media/projects.png": "/static/media/projects.111e4eb63fe9c2c85878.png",
-    "static/media/about.png": "/static/media/about.23ef770d5d92dd02bfac.png",
-    "static/media/home.png": "/static/media/home.48d5410a3a26f805e5d9.png",
     "static/media/glitch.jpeg": "/static/media/glitch.9ffd6b147e767eb9a0eb.jpeg",
     "static/media/nokiafc22.ttf": "/static/media/nokiafc22.04dc8b649b961470b957.ttf",
     "static/media/NokiaKokia.ttf": "/static/media/NokiaKokia.e16f408edf94bd8c9d4a.ttf",
     "index.html": "/index.html",
-    "main.190840fc.css.map": "/static/css/main.190840fc.css.map",
-    "main.e1a08413.js.map": "/static/js/main.e1a08413.js.map",
+    "main.a70f2bcc.css.map": "/static/css/main.a70f2bcc.css.map",
+    "main.55fba020.js.map": "/static/js/main.55fba020.js.map",
     "453.0cdc3013.chunk.js.map": "/static/js/453.0cdc3013.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.190840fc.css",
-    "static/js/main.e1a08413.js"
+    "static/css/main.a70f2bcc.css",
+    "static/js/main.55fba020.js"
   ]
 }
