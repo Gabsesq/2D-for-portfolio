@@ -16,6 +16,7 @@ body, html {
   background-repeat: no-repeat;
   background-attachment: fixed; /* Keeps the background fixed while scrolling */
   padding-top: 10vh;
+  background-position: center calc(5vh);
 }
 
 #root {
