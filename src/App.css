@@ -7,11 +7,15 @@
 
 body, html {
   margin: 0;
-  padding: 0;
   height: 100%;
   width: 100%;
   font-family:  sans-serif;
-  background-color: #f2feff; /* #7BA583;*/
+  background-image: url('./assets/BabyGabby.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  padding-top: 10vh;
 }
 
 #root {
@@ -22,6 +26,7 @@ body, html {
   height: 100%;
   display: flex;
   flex-direction: column;
+  padding-top: 6vh;
 }
 
 .container { 
@@ -34,7 +39,6 @@ body, html {
 }
 
 .App-header {
-  background-color: #f2feff; /* #7BA583;*/
   min-height: 100vh;
   display: flex;
   flex-direction: column;

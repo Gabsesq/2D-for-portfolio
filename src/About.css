@@ -21,7 +21,7 @@
     font-family: sans-serif !important;
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    background-color: #a7c1d3; /* Light cyan background */
+    background-color: rgba(255, 193, 205); /* Light cyan background */
     padding: 15px 20px;
     border-radius: 25px;
     position: relative;

@@ -1,24 +1,24 @@
-nav{
+nav {
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
-  width: 50%;
-  max-width: 500px;
-  max-height: 12%;
-  
+  width: 100%; /* Stretch to full width */
+  max-height: 10vh; /* Occupy 10% of the screen height */
   z-index: 1000; /* Ensure it stays on top of other content */
   display: flex;
-  justify-content: center;
-  margin-left: 25%;
-  border-radius: 30px;
-  margin-bottom: 2% 
+  justify-content: space-between; /* Space between time display and nav items */
+  align-items: center; /* Vertically center items */
+  padding: 0 20px;
+  border-radius: 0 0 30px 30px; /* Rounded bottom corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  margin-bottom: 2%;
 }
+
 nav ul {
   list-style: none;
   display: flex;
   padding: 10px;
   margin: 0;
-  margin-bottom: 10%;
 }
 
 nav ul li {
@@ -26,11 +26,71 @@ nav ul li {
 }
 
 nav ul li img {
-  width: 40px; /* Adjust size as needed */
+  width: 30px; /* Adjust size as needed */
   height: auto;
   cursor: pointer; /* Makes the image clickable */
+  background-color: red;
 }
 
 nav ul li img:hover {
   opacity: 0.8; /* Add a hover effect */
+}
+
+/* Styling for the time display */
+.time-display {
+  color: rgb(255, 255, 255);
+  font-family: 'nokiafc22', sans-serif;
+  font-size: 1rem;
+  padding: 4px 5px;
+  display: flex;
+  align-items: center;
+}
+
+.charge-icon {
+  margin-top: 0;
+  width: auto; /* Adjust the size of the image */
+  height: 15px; /* Keep the image square */
+  margin-right: 5px; /* Space between the image and the time */
+}
+
+/* Icon Grid Container Styling */
+.icon-grid-container {
+  display: block;
+  width: 37.5px; /* 50% of the original 75px */
+  height: 40px; /* 50% of the original 75px */
+  cursor: pointer;
+  margin-top: 1px;
+}
+
+/* The actual 3x3 grid layout */
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 12.5px); /* 50% of the original 25px */
+  grid-template-rows: repeat(3, 12.5px); /* 50% of the original 25px */
+  gap: 2.5px; /* 50% of the original 5px */
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-square {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* Blue background for squares */
+  border-radius: 3px;
+}
+
+/* Hover effect for the entire grid */
+.icon-grid:hover .grid-square {
+  background-color: #ffffff; /* Darken all squares on hover */
+}
+
+/* Initially hide the icons */
+.nav-icons.hidden {
+  display: none;
+}
+
+/* Show the icons when visible */
+.nav-icons.visible {
+  display: flex;
+  justify-content: space-between;
 }

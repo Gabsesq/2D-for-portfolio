@@ -7,3 +7,20 @@ Hello! My name is Gabriella Esquibel. I am a new grad looking to become a fullst
       "I played college golf, love/hate relationship", 
       "Singing and dancing is one of my favorite pass-times", 
       "I love my dogs!!!"
+
+Notes:
+
+      smaller 9 squares
+      Navbar scroll out half circle
+      Charger symbol is fugly, take out white
+      1 new message symbol on front page? Then route to txts?
+      fix background screensaver, too low on 3d site
+      better icons, those blue ones have got to go.
+
+3D Site:
+
+      change domain name
+      favicon?
+      Research button interaction... may need to merge sites.
+      importing large files and/or adding assets by links
+      camera button scrolls out to image board w images

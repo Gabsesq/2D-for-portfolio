@@ -8,7 +8,6 @@ import About from './Components/About';
 import Contact from './Components/Contact';
 import ProjectShowcase from './Components/ProjectShowcase';
 import Navigation from './Components/Navigation';
-import TimeDisplay from './Components/TimeDisplay'; // Import the TimeDisplay component
 
 import TetrisGame from './Components/TetrisGame';
 
@@ -34,7 +33,6 @@ function App() {
     <Router>
       <div className="App">
         <Navigation />
-        <TimeDisplay /> {/* Add the TimeDisplay component */}
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
