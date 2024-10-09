@@ -9,8 +9,6 @@ nav {
   justify-content: space-between; /* Space between time display and nav items */
   align-items: center; /* Vertically center items */
   padding: 0 20px;
-  border-radius: 0 0 30px 30px; /* Rounded bottom corners */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
   margin-bottom: 2%;
 }
 
@@ -59,15 +57,15 @@ nav ul li img:hover {
   width: 37.5px; /* 50% of the original 75px */
   height: 40px; /* 50% of the original 75px */
   cursor: pointer;
-  margin-top: 1px;
+  margin-top: 1%;
 }
 
 /* The actual 3x3 grid layout */
 .icon-grid {
   display: grid;
-  grid-template-columns: repeat(3, 12.5px); /* 50% of the original 25px */
-  grid-template-rows: repeat(3, 12.5px); /* 50% of the original 25px */
-  gap: 2.5px; /* 50% of the original 5px */
+  grid-template-columns: repeat(3, 8px); /* 50% of the original 25px */
+  grid-template-rows: repeat(3, 8px); /* 50% of the original 25px */
+  gap: 2px; /* 50% of the original 5px */
   justify-content: center;
   align-items: center;
 }
@@ -76,7 +74,7 @@ nav ul li img:hover {
   width: 100%;
   height: 100%;
   background-color: #ffffff; /* Blue background for squares */
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
 /* Hover effect for the entire grid */
