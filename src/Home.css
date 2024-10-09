@@ -1,7 +1,6 @@
 .Home {
     height: 100%;
 
-    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,18 +16,19 @@
     animation-duration: 4s; /* Adjust the speed as needed */
     animation-iteration-count: infinite; /* Repeat the animation indefinitely */
     animation-direction: alternate; /* Makes the animation reverse direction */
+    
   }
 
   .Welcome {
     font-family: 'nokiafc22', sans-serif;
     animation-name: openText;
     animation-duration: 4s;
+   
   }
   
   .App-header {
     
-    min-height: 10vh; /* Adjust as needed to reduce blank space */
-    margin-top: 7%;
+    min-height: 4vh; /* Adjust as needed to reduce blank space */
     display: flex;
     flex-direction: column;
     align-items: center;
