@@ -1,6 +1,6 @@
 nav {
   position: fixed;
-  top: 0;
+  top: 2vh;
   left: 0;
   width: 100%; /* Stretch to full width */
   max-height: 10vh; /* Occupy 10% of the screen height */
@@ -9,7 +9,7 @@ nav {
   justify-content: space-between; /* Space between time display and nav items */
   align-items: center; /* Vertically center items */
   padding: 0 20px;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
 }
 
 nav ul {
