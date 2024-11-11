@@ -23,15 +23,15 @@ const Navigation = () => {
 
     if (!iconsVisible) {
       // Animate icons in a quarter circle (bottom left) from the 9-square grid
-      gsap.to(homeRef.current, { x: 320, y: 0, duration: .5, opacity: 1 });
-      gsap.to(aboutRef.current, { x: 330, y: 40, duration: .5, opacity: 1 });
-      gsap.to(contactRef.current, { x: 360, y: 60, duration: .5, opacity: 1 });
-      gsap.to(projectsRef.current, { x: 400, y: 70, duration: .5, opacity: 1 });
+      gsap.to(homeRef.current, { x: 20, y: 0, duration: .5, opacity: 1 });
+      gsap.to(aboutRef.current, { x: 30, y: 40, duration: .5, opacity: 1 });
+      gsap.to(contactRef.current, { x: 60, y: 60, duration: .5, opacity: 1 });
+      gsap.to(projectsRef.current, { x: 100, y: 70, duration: .5, opacity: 1 });
     } else {
       // Reset positions if hiding the icons
       gsap.to([homeRef.current, aboutRef.current, contactRef.current, projectsRef.current], {
-        x: 700,
-        y: -100,
+        x: 100,
+        y: -7,
         duration: 1,
         opacity: 0,
       });
