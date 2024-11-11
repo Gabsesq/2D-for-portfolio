@@ -1,46 +1,74 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // Import Link for routing
-import chargeImage from '../assets/charge.jpg'; // Adjust the image paths
-import homeImage from '../assets/TXTPICS/home.png'; // Correct the image path
+import React, { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { gsap } from 'gsap';
+import chargeImage from '../assets/charge.jpg';
+import homeImage from '../assets/TXTPICS/home.png';
 import aboutImage from '../assets/TXTPICS/about.png';
 import contactImage from '../assets/TXTPICS/contact.png';
 import projectsImage from '../assets/TXTPICS/projects.png';
-import '../Navigation.css'; // Keep the CSS file
+import '../Navigation.css';
 
 const Navigation = () => {
-  const [iconsVisible, setIconsVisible] = useState(false); // State to toggle visibility
+  const [iconsVisible, setIconsVisible] = useState(false);
+
+  // Create refs for each icon
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const contactRef = useRef(null);
+  const projectsRef = useRef(null);
+  const gridRef = useRef(null);
 
   const handleClick = () => {
-    setIconsVisible(!iconsVisible); // Toggle visibility when clicking on mini squares
+    setIconsVisible(!iconsVisible);
+
+    if (!iconsVisible) {
+      // Animate icons in a quarter circle (bottom left) from the 9-square grid
+      gsap.to(homeRef.current, { x: 320, y: 0, duration: .5, opacity: 1 });
+      gsap.to(aboutRef.current, { x: 330, y: 40, duration: .5, opacity: 1 });
+      gsap.to(contactRef.current, { x: 360, y: 60, duration: .5, opacity: 1 });
+      gsap.to(projectsRef.current, { x: 400, y: 70, duration: .5, opacity: 1 });
+    } else {
+      // Reset positions if hiding the icons
+      gsap.to([homeRef.current, aboutRef.current, contactRef.current, projectsRef.current], {
+        x: 700,
+        y: -100,
+        duration: 1,
+        opacity: 0,
+      });
+    }
   };
+
+  // Set initial opacity to 0 for the icons
+  useEffect(() => {
+    gsap.set([homeRef.current, aboutRef.current, contactRef.current, projectsRef.current], { opacity: 0 });
+  }, []);
 
   return (
     <nav>
-      {/* Time display */}
       <div className="time-display">
-        <img src={chargeImage} alt="Charge" className="charge-icon" /> {/* Display the charge icon */}
+        <img src={chargeImage} alt="Charge" className="charge-icon" />
         12:30
       </div>
 
-      {/* Navigation icons with links to routes, initially hidden */}
-      <ul className={`nav-icons ${iconsVisible ? 'visible' : 'hidden'}`}>
-        <li>
-          <Link to="/"> {/* Link to Home route */}
+      {/* Navigation icons */}
+      <ul className="nav-icons" style={{ position: 'relative' }}>
+        <li ref={homeRef} style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
+          <Link to="/"> {/* Link to Home */}
             <img src={homeImage} alt="Home" />
           </Link>
         </li>
-        <li>
-          <Link to="/about"> {/* Link to About route */}
+        <li ref={aboutRef} style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
+          <Link to="/about"> {/* Link to About */}
             <img src={aboutImage} alt="About" />
           </Link>
         </li>
-        <li>
-          <Link to="/contact"> {/* Link to Contact route */}
+        <li ref={contactRef} style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
+          <Link to="/contact"> {/* Link to Contact */}
             <img src={contactImage} alt="Contact" />
           </Link>
         </li>
-        <li>
-          <Link to="/projects"> {/* Link to Projects route */}
+        <li ref={projectsRef} style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
+          <Link to="/projects"> {/* Link to Projects */}
             <img src={projectsImage} alt="Projects" />
           </Link>
         </li>
