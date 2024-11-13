@@ -17,6 +17,7 @@ body, html {
   background-attachment: fixed; /* Keeps the background fixed while scrolling */
   padding-top: 5vh;
   background-position: center calc(-30vh);
+  overflow: auto;
 }
 
 #root {
@@ -29,7 +30,13 @@ body, html {
   flex-direction: column;
   padding-top: 6vh;
 }
-
+body::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in WebKit browsers (e.g., Chrome, Safari) */
+}
+body {
+  -ms-overflow-style: none; /* Hide scrollbar in Internet Explorer and Edge */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
 .container { 
   min-height:200vh;
   width: 100%;
