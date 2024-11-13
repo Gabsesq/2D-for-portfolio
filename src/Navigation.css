@@ -58,9 +58,9 @@ nav ul li img:hover {
   height: 40px;
   cursor: pointer;
   margin-top: 1%;
-  position: relative;
-  left: 100px; /* Move to the right by 10px, adjust as needed */
-  border-color: #ea7adb;
+  position: absolute;
+  right: 10%; /* Position 90% from the right */
+  top: 2vh; /* Adjust vertical alignment as needed */
 }
 
 /* The actual 3x3 grid layout */
@@ -71,7 +71,6 @@ nav ul li img:hover {
   gap: 2px; /* 50% of the original 5px */
   justify-content: center;
   align-items: center;
-
 }
 
 .grid-square {
@@ -115,16 +114,19 @@ nav ul li img:hover {
 }
 
 
+
+/* Navbar Container Styling */
 .navbar-container {
-  position: relative;
+  position: absolute;
   width: 200px; /* Adjust as needed */
   height: 200px;
   overflow: hidden;
-  left: -385px;
-  top:-130px;
+  right: 10%; /* Position 90% from the right */
+  top: 5vh; /* Adjust vertical alignment as needed */
   transform-origin: bottom right;
   z-index: -10;
 }
+
 
 .quarter-circle {
   position: absolute;
