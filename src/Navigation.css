@@ -122,7 +122,7 @@ nav ul li img:hover {
   height: 200px;
   overflow: hidden;
   right: 0%; /* Position 90% from the right */
-  top: -65vh; /* Adjust vertical alignment as needed */
+  top: -67vh; /* Adjust vertical alignment as needed */
   transform-origin: bottom right;
   z-index: -10;
 }
