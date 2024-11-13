@@ -59,8 +59,8 @@ nav ul li img:hover {
   cursor: pointer;
   margin-top: 1%;
   position: absolute;
-  right: 10%; /* Position 90% from the right */
-  top: 2vh; /* Adjust vertical alignment as needed */
+  right: 2%; /* Position 90% from the right */
+  top: 0vh; /* Adjust vertical alignment as needed */
 }
 
 /* The actual 3x3 grid layout */
@@ -121,8 +121,8 @@ nav ul li img:hover {
   width: 200px; /* Adjust as needed */
   height: 200px;
   overflow: hidden;
-  right: 10%; /* Position 90% from the right */
-  top: 5vh; /* Adjust vertical alignment as needed */
+  right: 0%; /* Position 90% from the right */
+  top: -24vh; /* Adjust vertical alignment as needed */
   transform-origin: bottom right;
   z-index: -10;
 }
