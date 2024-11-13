@@ -16,28 +16,28 @@ const Navigation = () => {
   const aboutRef = useRef(null);
   const contactRef = useRef(null);
   const projectsRef = useRef(null);
-  const gridRef = useRef(null);
 
   const handleClick = () => {
     setIconsVisible(!iconsVisible);
 
     if (!iconsVisible) {
-      // Animate icons in a quarter circle (bottom left) from the 9-square grid
-      gsap.to(homeRef.current, { x: 110, y: 0, duration: .5, opacity: 1 });
-      gsap.to(aboutRef.current, { x: 120, y: 30, duration: .5, opacity: 1 });
-      gsap.to(contactRef.current, { x: 135, y: 45, duration: .5, opacity: 1 });
-      gsap.to(projectsRef.current, { x: 175, y: 70, duration: .5, opacity: 1 });
-    } else {
-      // Reset positions if hiding the icons
-      gsap.to([homeRef.current, aboutRef.current, contactRef.current, projectsRef.current], {
-        x: 100,
-        y: -7,
-        duration: 1,
-        opacity: 0,
-      });
+      // Position icons to align with the quarter circle initially
+      gsap.set(homeRef.current, { x: 110, y: 60, opacity: 1 });
+      gsap.set(aboutRef.current, { x: 65, y: 80,  opacity: 1 });
+      gsap.set(contactRef.current, { x: 20, y: 120, opacity: 1 });
+      gsap.set(projectsRef.current, { x: -20, y: 180, opacity: 1 });
+  
+      // Apply a rotation to the entire navbar-container
+      gsap.to(".navbar-container", { rotation: -90, duration: .5 });
+    }else {
+      // Reset icons to original position along the same path
+      gsap.to(".navbar-container", { rotation: 0, duration: .5 });
+      gsap.set(homeRef.current, { x: 110, y: 60, opacity: 1, duration: 1});
+      gsap.set(aboutRef.current, { x: 65, y: 80,  opacity: 1, duration: 1});
+      gsap.set(contactRef.current, { x: 20, y: 120, opacity: 1, duration: 1 });
+      gsap.set(projectsRef.current, { x: -20, y: 180, opacity: 1, duration: 1 });
     }
   };
-
   // Set initial opacity to 0 for the icons
   useEffect(() => {
     gsap.set([homeRef.current, aboutRef.current, contactRef.current, projectsRef.current], { opacity: 0 });
@@ -49,30 +49,6 @@ const Navigation = () => {
         <img src={chargeImage} alt="Charge" className="charge-icon" />
         12:30
       </div>
-
-      {/* Navigation icons */}
-      <ul className="nav-icons" style={{ position: 'relative' }}>
-        <li ref={homeRef} style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
-          <Link to="/"> {/* Link to Home */}
-            <img src={homeImage} alt="Home" />
-          </Link>
-        </li>
-        <li ref={aboutRef} style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
-          <Link to="/about"> {/* Link to About */}
-            <img src={aboutImage} alt="About" />
-          </Link>
-        </li>
-        <li ref={contactRef} style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
-          <Link to="/contact"> {/* Link to Contact */}
-            <img src={contactImage} alt="Contact" />
-          </Link>
-        </li>
-        <li ref={projectsRef} style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
-          <Link to="/projects"> {/* Link to Projects */}
-            <img src={projectsImage} alt="Projects" />
-          </Link>
-        </li>
-      </ul>
 
       {/* New Icon Grid Container with 9 squares */}
       <div className="icon-grid-container" onClick={handleClick}>
@@ -88,8 +64,34 @@ const Navigation = () => {
           <div className="grid-square"></div>
         </div>
       </div>
+
+      {/* Navbar container with icons */}
+      <div className="navbar-container">
+        <div className="quarter-circle"></div>
+        <div ref={homeRef} className="icon">
+          <Link to="/">
+            <img src={homeImage} alt="Home" />
+          </Link>
+        </div>
+        <div ref={aboutRef} className="icon">
+          <Link to="/about">
+            <img src={aboutImage} alt="About" />
+          </Link>
+        </div>
+        <div ref={contactRef} className="icon">
+          <Link to="/contact">
+            <img src={contactImage} alt="Contact" />
+          </Link>
+        </div>
+        <div ref={projectsRef} className="icon">
+          <Link to="/projects">
+            <img src={projectsImage} alt="Projects" />
+          </Link>
+        </div>
+      </div>
     </nav>
   );
 };
 
 export default Navigation;
+
